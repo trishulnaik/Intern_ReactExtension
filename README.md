@@ -1,43 +1,56 @@
-# Getting Started with Create React App
+# Browser Extension using React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a browser extension built with React.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+To install the necessary dependencies, run:
 
-### `npm start`
+```bash
+npm install
+# or
+yarn
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Development
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To start the development server, run:
 
-### `npm test`
+```bash
+npm start
+# or
+yarn start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This will open the development server in your default web browser. The page will reload if you make edits and you will see any lint errors in the console.
 
-### `npm run build`
+## Building the Extension
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To prepare the extension for deployment, build the project using:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm run build
+# or
+yarn build
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This command creates a production-ready build of your extension in the `build` directory.
 
-### `npm run eject`
+## Loading the Extension in Chrome
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Open Chrome and go to `chrome://extensions/`.
+2. Enable "Developer mode" at the top-right corner.
+3. Click on "Load unpacked" and select the `build` folder from your project directory.
+4. The extension should now be visible in the list of installed extensions.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Notes
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Make sure to update the necessary files (`manifest.json`, etc.) in the `public` folder for your extension configuration.
+- Test your extension thoroughly before publishing to ensure it behaves as expected in different scenarios.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Learn More
 
@@ -45,26 +58,6 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
 ### Making a Progressive Web App
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
